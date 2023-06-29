@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registro de empleado </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+    <link rel="stylesheet" href="./assets/css/registry.css">
+    <link rel="stylesheet" href="./assets/css/components/card.css">
+    <link rel="stylesheet" href="./assets/css/components/inputs.css">
+    <link rel="stylesheet" href="./assets/css/componentes/buttom.css">
+</head>
+
+<body>
+    <main class="container flex flex--column flex--center">
+        <div class="registry-emcabezado">
+            <img src="./assets/img/undraw_hire_re_gn5j.svg" alt="Registro de empleados" class="registry-header__logo">
+            <h1 class="registry-header__title">Registro de empleados</h1>
+        </div>
+        <section class="tarjeta">
+            <h2 class="card__title">Completa el registro</h2>
+            <form action="./registryComplete.html" class="formulario flex flex--column">
+                <fieldset>
+                    <legend class="form__label">Información</legend>
+                    <div class="input-container">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required
+                            data-tipo="nombre">
+                        <label class="input-label" for="name">Nombre</label>
+                    </div>
+                    <div class="input-container">
+                        <input name="employeeID" id="employeeID" class="input" type="id" placeholder="Id" required
+                            data-tipo="Id">
+                        <label class="input-label" for="id">Id del empleado</label>
+                    </div>
+                    <div class="input-container">
+                        <input name="date" id="date" class="input" type="date" placeholder="Dia"
+                            required data-tipo="Dia">
+                        <label class="input-label" for="date">Fecha</label>
+                    </div>
+                    <div class="input-container">
+                        <input name="pinchIn" id="pinchIn" class="input" type="time" placeholder="pinchIn">
+                        <label class="input-label" for="pinchIn"> Hora de llegada </label>
+                    </div>
+                    <div class="input-container">
+                        <input name="pinchOut" id="pinchOut" class="input" type="time" placeholder="pinchOut">
+                        <label class="input-label" for="pinchOut"> Hora de salida </label>
+                    </div>
+                </fieldset>
+                <button class="button"> Agregar </button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
